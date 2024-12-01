@@ -1,0 +1,181 @@
+.details {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.details.open {
+    display: flex;
+}
+
+.details-content {
+    background: white;
+    border-radius: 10px;
+    text-align:left;
+    width: 90%;
+    max-width: 400px;
+    height: 90%;
+    text-transform: capitalize;
+    border-radius: 20px;
+}
+
+.details-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.details-content p {
+    font-size: 16px;
+}
+
+.details-image {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    display: block;
+}
+
+.details-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #b5b4b4;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+    background-color: #ffffff;
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid #367864;
+}
+
+.tab-content {
+    margin-top: 20px;
+    display: none;
+    padding-left: 10px;
+}
+
+.tab-content.hidden {
+    display: none;
+}
+
+.tab-content:not(.hidden) {
+    display: block;
+}
+
+.details-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Cor padrão */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 10px;
+}
+
+.details-image {
+    width: 200px;
+    height: 200px;
+}
+
+/* Adicione as outras classes para os tipos de Pokémon */
+
+.detailsInfo.normal {
+    background-color: #a6a877;
+}
+
+.detailsInfo.grass {
+    background-color: #77c850;
+}
+
+.detailsInfo.fire {
+    background-color: #ee7f30;
+}
+
+.detailsInfo.water {
+    background-color: #678fee;
+}
+
+.detailsInfo.electric {
+    background-color: #f7cf2e;
+}
+
+.detailsInfo.ice {
+    background-color: #98d5d7;
+}
+
+.detailsInfo.ground {
+    background-color: #dfbf69;
+}
+
+.detailsInfo.flying {
+    background-color: #a98ff0;
+}
+
+.detailsInfo.poison {
+    background-color: #a040a0;
+}
+
+.detailsInfo.fighting {
+    background-color: #bf3029;
+}
+
+.detailsInfo.psychic {
+    background-color: #f65687;
+}
+
+.detailsInfo.dark {
+    background-color: #725847;
+}
+
+.detailsInfo.rock {
+    background-color: #b8a137;
+}
+
+.detailsInfo.bug {
+    background-color: #a8b720;
+}
+
+.detailsInfo.ghost {
+    background-color: #6e5896;
+}
+
+.detailsInfo.steel {
+    background-color: #b9b7cf;
+}
+
+.detailsInfo.dragon {
+    background-color: #6f38f6;
+}
+
+.detailsInfo.fairy {
+    background-color: #f9aec7;
+}
+
+.detailsInfo{
+    color: #ffffff;
+    padding-left: 20px;
+}
+
+#detailsNumber{
+    text-align: end;
+    font-size: 25px;
+    padding-right: 20px;
+}
