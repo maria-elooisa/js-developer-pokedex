@@ -20,6 +20,8 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/details.css">
+
 </head>
 
 <body>
@@ -36,11 +38,61 @@
             </button>
         </div>
     </section>
+    
+    <!-- Grade de Detalhes -->
+    <section>
+        <div id="pokemonDetails" class="details">
+            <div class="details-content">
+                
+                
+                <div class="detailsInfo">
+                    <button class="close" id="closeDetails">&times;</button>
+                    <!-- Nome do Pokémon -->
+                    <h2 id="detailsTitle"></h2>
+                    <p id="detailsType"></p>
+                    <p id="detailsNumber"></p>
+    
+                    <!-- Imagem do Pokémon -->
+                    <img id="detailsImage" class="details-image" src="" alt="Pokémon">
+                </div>
+                <!-- Abas -->
+                
+                <div class="details-tabs">
+                    <button class="tab-button active" data-tab="about">About</button>
+                    <button class="tab-button" data-tab="abilities">Base Stats</button>
+                    <button class="tab-button" data-tab="abilities">Evolution</button>
+                    <button class="tab-button" data-tab="abilities">Moves</button>
+                </div>
+        
+                <!-- Conteúdo das abas -->
+                <div class="tab-content" id="aboutTab">
+                    <p id="detailsNumber"></p>
+                    <p id="detailsType"></p>
+
+                    <div id="aboutTab" class="tab-content">
+                        <p id="detailsSpecies"></p>
+                        <p id="detailsType"></p>
+                        <p id="detailsHeight"></p>
+                        <p id="detailsWeight"></p>
+                        <p id="detailsAbilities"></p>
+
+                    </div>
+                    
+                </div>
+                <div class="tab-content hidden" id="abilitiesTab">
+                    <p id="detailsAbilities"></p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/details.js"></script>
+    
 </body>
 
 </html>
